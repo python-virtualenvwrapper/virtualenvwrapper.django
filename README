@@ -1,0 +1,10 @@
+==========================
+ virtualenvwrapper.django
+==========================
+
+virtualenvwrapper.django is a template plugin for
+`virtualenvwrapper.project`_ to create new Django projects
+automatically.  When used with ``mkproject``, it installs Django into
+the new virtualenv and runs ``django-admin`` to create a new project.
+
+.. _virtualenvwrapper.project: http://www.doughellmann.com/projects/virtualenvwrapper.projects/
