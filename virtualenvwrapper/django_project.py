@@ -13,5 +13,5 @@ def template(args):
     """
     project = args[0]
     subprocess.check_call(['pip', 'install', 'django'])
-    #subprocess.check_call(['pip', 'install', 'django'])
+    subprocess.check_call(['django-admin.py', 'startproject', project])
     return
