@@ -42,7 +42,7 @@ Usage
   
   virtualenvwrapper.django Running "django-admin.py startprojects my_fancy_new_site"
   
-  $ find .
+  (my_fancy_new_site)$ find .
   .
   ./my_fancy_new_site
   ./my_fancy_new_site/__init__.py
