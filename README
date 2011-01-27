@@ -5,6 +5,49 @@
 virtualenvwrapper.django is a template plugin for
 `virtualenvwrapper.project`_ to create new Django projects
 automatically.  When used with ``mkproject``, it installs Django into
-the new virtualenv and runs ``django-admin`` to create a new project.
+the new virtualenv then runs ``django-admin.py`` to create a new
+project skeleton.
 
+Installation
+============
+
+::
+
+  $ pip install virtualenvwrapper.django
+
+Usage
+=====
+
+::
+
+  $ mkproject -t django my_fancy_new_site
+  site_filename is /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site.pyc
+  New python executable in my_fancy_new_site/bin/python
+  Installing distribute...done.
+
+  ... virtualenv and project directories are created ...
+  
+  Applying template django
+  Downloading/unpacking django
+    Downloading Django-1.2.4.tar.gz (6.4Mb): 6.4Mb downloaded
+    Running setup.py egg_info for package django
+      
+  Installing collected packages: django
+    Running setup.py install for django
+      changing mode of build/scripts-2.7/django-admin.py from 644 to 755
+      
+      changing mode of /Users/dhellmann/.virtualenvs/my_fancy_new_site/bin/django-admin.py to 755
+  Successfully installed django
+  Cleaning up...
+  
+  virtualenvwrapper.django Running "django-admin.py startprojects my_fancy_new_site"
+  
+  $ find .
+  .
+  ./my_fancy_new_site
+  ./my_fancy_new_site/__init__.py
+  ./my_fancy_new_site/manage.py
+  ./my_fancy_new_site/settings.py
+  ./my_fancy_new_site/urls.py
+  
 .. _virtualenvwrapper.project: http://www.doughellmann.com/projects/virtualenvwrapper.projects/
