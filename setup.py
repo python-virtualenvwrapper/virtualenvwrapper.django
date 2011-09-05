@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 PROJECT = 'virtualenvwrapper.django'
-VERSION = '0.1'
+VERSION = '0.2'
 
 # Bootstrap installation of Distribute
 import distribute_setup
@@ -137,8 +137,7 @@ setup(
     provides=['virtualenvwrapper.django',
               ],
     requires=['virtualenv',
-              'virtualenvwrapper (>=2.0)',
-              'virtualenvwrapper.project',
+              'virtualenvwrapper (>=2.9)',
               ],
 
     namespace_packages = [ 'virtualenvwrapper' ],
