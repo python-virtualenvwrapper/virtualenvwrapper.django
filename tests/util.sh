@@ -1,12 +1,7 @@
 
 load_virtualenvwrapper () {
-    if [ ! -z "$VIRTUAL_ENV" ]
-    then
-        venvw="$VIRTUAL_ENV/bin/virtualenvwrapper.sh"
-        export PYTHONPATH="$VIRTUAL_ENV/lib/python*/site-packages"
-    else
-        venvw=$(which virtualenvwrapper.sh)
-    fi
+    venvw=`which virtualenvwrapper.sh`
+    echo "Test running in `pwd`"
     echo "Loading $venvw"
     source $venvw
 }

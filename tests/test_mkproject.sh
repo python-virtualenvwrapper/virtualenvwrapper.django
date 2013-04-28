@@ -34,7 +34,7 @@ test_create_project_files () {
     mkproject -t django myproject1
     for filename in myproject1 myproject1/__init__.py myproject1/urls.py
     do
-        assertTrue "$filename not created" "[ -e $PROJECT_HOME/myproject1/$filename ]"
+        assertTrue "$filename not created" "[ -e $PROJECT_HOME/myproject1/myproject1/$filename ]"
     done
 }
 

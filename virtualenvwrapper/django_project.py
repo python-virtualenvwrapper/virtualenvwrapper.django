@@ -7,14 +7,17 @@
 """
 
 import logging
+import os
 import subprocess
 
 log = logging.getLogger('virtualenvwrapper.django')
 
+
 def template(args):
     """Installs Django and runs django-admin to create a new project.
     """
-    project = args[0]
+    project, project_dir = args
+    os.chdir(project_dir)
     subprocess.check_call(['pip', 'install', 'django'])
     log.info('Running "django-admin.py startprojects %s"', project)
     subprocess.check_call(['django-admin.py', 'startproject', project])
