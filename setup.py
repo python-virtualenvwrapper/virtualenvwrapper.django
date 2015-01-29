@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 PROJECT = 'virtualenvwrapper.django'
-VERSION = '0.3'
+VERSION = '0.4'
 
 from setuptools import setup, find_packages
 
