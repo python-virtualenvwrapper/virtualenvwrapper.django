@@ -3,14 +3,7 @@
 PROJECT = 'virtualenvwrapper.django'
 VERSION = '0.3'
 
-try:
-    from setuptools import setup, find_packages
-except ImportError:
-    # Bootstrap installation of Setuptools
-    import ez_setup
-    ez_setup.use_setuptools()
-
-    from setuptools import setup, find_packages
+from setuptools import setup, find_packages
 
 from distutils.util import convert_path
 from fnmatch import fnmatchcase
