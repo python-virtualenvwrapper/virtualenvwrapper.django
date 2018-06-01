@@ -19,6 +19,6 @@ def template(args):
     project, project_dir = args
     os.chdir(project_dir)
     subprocess.check_call(['pip', 'install', 'django'])
-    log.info('Running "django-admin.py startproject %s"', project)
-    subprocess.check_call(['django-admin.py', 'startproject', project])
+    log.info('Running "django-admin.py startproject %s ."', project)
+    subprocess.check_call(['django-admin.py', 'startproject', project, '.'])
     return
